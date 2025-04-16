@@ -62,7 +62,7 @@ try:
     print("Unique words sample:", unique_words[:10])
     
     # Save the result (each token in a separate line)
-    pd.Series(unique_words).to_csv(f"Vocab/Normilized_{Worldlist_Name}.txt", index=False, header=False)
+    pd.Series(unique_words).to_csv(f"Vocab/Result/Normilized_{Worldlist_Name}.txt", index=False, header=False)
     
 except pd.errors.ParserError as e:
     print(f"Error reading file: {e}")
